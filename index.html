@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+  <link rel="stylesheet" href="./bootstrap.min.css">
+</head>
+<body class="bg-secondary">
+  <div class="task-manager">
+    <div class="container">
+      <div class="card mt-5 p-3 text-center col-md-7 mx-auto">
+        <h6 class="display-6">Task manager</h6>
+        <input type="text" class="form-control" id="addInput" placeholder="Add task ">
+        <div class="addTaskBtn text-start mt-3">
+          <button class="btn btn-primary rounded-0" onclick="addTasks()">Add Task</button>
+        </div>
+
+
+        <div class="task-heading text-start mt-3">
+        <h5>Tasks</h5>
+        </div>
+        <div class="tasks card containertext-start">
+          <table class="table table-striped table-bordered">
+            <tr>
+              <th class="col-md-1 col-sm-1"></th>
+              <th class="col-md-5 col-sm-7">Task </th>
+              <th class="col-md-2 d-md-flex d-sm-none">Date</th>
+              <th class="col-md-4 col-sm-4">Edit & Delete</th>
+            </table>
+            </tr>
+          <div id="table-display">
+
+          </div>
+         </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <script src="./js/script.js"></script>
+</body>
+</html>
